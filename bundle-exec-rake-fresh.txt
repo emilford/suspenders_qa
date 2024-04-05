@@ -1,0 +1,21 @@
+yarn install v1.22.19
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.09s.
+yarn run v1.22.19
+$ postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css
+Done in 0.44s.
+/Users/eric/.asdf/installs/ruby/3.3.0/bin/ruby -I/Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-core-3.13.0/lib:/Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-support-3.13.1/lib /Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-core-3.13.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+No examples found.
+
+Randomized with seed 35914
+
+
+Finished in 0.00091 seconds (files took 0.21086 seconds to load)
+0 examples, 0 failures
+
+Randomized with seed 35914
+
+No vulnerabilities found
+Linting 3 files with 16 linters...
+No errors were found in ERB files
