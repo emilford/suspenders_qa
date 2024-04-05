@@ -1,0 +1,8 @@
+yarn run v1.22.19
+$ run-p lint:eslint lint:stylelint lint:prettier
+$ prettier --check '**/*' --ignore-unknown
+$ eslint --max-warnings=0 --no-error-on-unmatched-pattern 'app/javascript/**/*.js'
+$ stylelint 'app/assets/stylesheets/**/*.css'
+Checking formatting...
+All matched files use Prettier code style!
+Done in 1.02s.

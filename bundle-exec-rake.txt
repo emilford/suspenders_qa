@@ -1,0 +1,120 @@
+yarn install v1.22.19
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.09s.
+yarn run v1.22.19
+$ postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css
+Done in 0.27s.
+/Users/eric/.asdf/installs/ruby/3.3.0/bin/ruby -I/Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-core-3.13.0/lib:/Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-support-3.13.1/lib /Users/eric/Code/thoughtbot/suspenders_qa/vendor/bundle/ruby/3.3.0/gems/rspec-core-3.13.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Randomized with seed 19178
+............**********.****
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+
+  1) Post add some examples to (or delete) /Users/eric/Code/thoughtbot/suspenders_qa/spec/models/post_spec.rb
+     # Not yet implemented
+     # ./spec/models/post_spec.rb:4
+
+  2) PostsHelper add some examples to (or delete) /Users/eric/Code/thoughtbot/suspenders_qa/spec/helpers/posts_helper_spec.rb
+     # Not yet implemented
+     # ./spec/helpers/posts_helper_spec.rb:14
+
+  3) /posts DELETE /destroy redirects to the posts list
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:129
+
+  4) /posts DELETE /destroy destroys the requested post
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:122
+
+  5) /posts GET /index renders a successful response
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:29
+
+  6) /posts GET /show renders a successful response
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:37
+
+  7) /posts PATCH /update with valid parameters updates the requested post
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:95
+
+  8) /posts PATCH /update with valid parameters redirects to the post
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:102
+
+  9) /posts PATCH /update with invalid parameters renders a response with 422 status (i.e. to display the 'edit' template)
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:112
+
+  10) /posts GET /edit renders a successful response
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:52
+
+  11) /posts POST /create with invalid parameters renders a response with 422 status (i.e. to display the 'new' template)
+     # Add a hash of attributes invalid for your model
+     # ./spec/requests/posts_spec.rb:81
+
+  12) /posts POST /create with invalid parameters does not create a new Post
+     # Add a hash of attributes invalid for your model
+     # ./spec/requests/posts_spec.rb:74
+
+  13) /posts POST /create with valid parameters redirects to the created post
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:67
+
+  14) /posts POST /create with valid parameters creates a new Post
+     # Add a hash of attributes valid for your model
+     # ./spec/requests/posts_spec.rb:61
+
+Finished in 0.0918 seconds (files took 1.14 seconds to load)
+27 examples, 0 failures, 14 pending
+
+Randomized with seed 19178
+
+No vulnerabilities found
+Linting 9 files with 16 linters...
+No errors were found in ERB files
+standard: Use Ruby Standard Style (https://github.com/standardrb/standard)
+  app/controllers/posts_controller.rb:2:37: Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  app/controllers/posts_controller.rb:2:62: Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  app/controllers/posts_controller.rb:60:3: Layout/EmptyLinesAroundAccessModifier: Keep a blank line before and after `private`.
+  app/controllers/posts_controller.rb:62:1: Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+  app/controllers/posts_controller.rb:62:5: Layout/IndentationConsistency: Inconsistent indentation detected.
+  app/controllers/posts_controller.rb:67:1: Layout/IndentationWidth: Use 2 (not 4) spaces for indentation.
+  app/controllers/posts_controller.rb:67:5: Layout/IndentationConsistency: Inconsistent indentation detected.
+  spec/helpers/posts_helper_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/models/post_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/requests/posts_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/requests/posts_spec.rb:16:1: Layout/TrailingWhitespace: Trailing whitespace detected.
+  spec/requests/posts_spec.rb:63:36: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:63:59: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:68:34: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:68:57: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:76:36: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:76:61: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:80:1: Layout/TrailingWhitespace: Trailing whitespace detected.
+  spec/requests/posts_spec.rb:82:34: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:82:59: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:85:1: Layout/TrailingWhitespace: Trailing whitespace detected.
+  spec/requests/posts_spec.rb:97:40: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:97:61: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:104:40: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:104:61: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:111:1: Layout/TrailingWhitespace: Trailing whitespace detected.
+  spec/requests/posts_spec.rb:114:40: Layout/SpaceInsideHashLiteralBraces: Space inside { detected.
+  spec/requests/posts_spec.rb:114:65: Layout/SpaceInsideHashLiteralBraces: Space inside } detected.
+  spec/requests/posts_spec.rb:117:1: Layout/TrailingWhitespace: Trailing whitespace detected.
+  spec/routing/posts_routing_spec.rb:21:1: Layout/EmptyLines: Extra blank line detected.
+  spec/views/posts/edit.html.erb_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/edit.html.erb_spec.rb:18:1: Layout/EmptyLinesAroundBlockBody: Extra empty line detected at block body beginning.
+  spec/views/posts/index.html.erb_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/index.html.erb_spec.rb:17:21: Style/TernaryParentheses: Use parentheses for ternary expressions with complex conditions.
+  spec/views/posts/index.html.erb_spec.rb:17:47: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/index.html.erb_spec.rb:17:53: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/index.html.erb_spec.rb:17:63: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/new.html.erb_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+  spec/views/posts/new.html.erb_spec.rb:14:1: Layout/EmptyLinesAroundBlockBody: Extra empty line detected at block body beginning.
+  spec/views/posts/show.html.erb_spec.rb:1:9: Style/StringLiterals: Prefer double-quoted strings unless you need single quotes to avoid extra backslashes for escaping.
+standard: Run `rake standard:fix` to fix up to 40 problems.
